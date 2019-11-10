@@ -35,3 +35,7 @@ yarn test:unit
 -- https://medium.com/magnetis-backstage/fazendo-uma-aplica%C3%A7%C3%A3o-em-vue-js-com-tdd-um-guia-extensivo-para-quem-quer-aprender-parte-3-a92db056dcf8
 -- Finish all of the components test
 -- integration between tests and store
+
+- Fourth step
+-- https://medium.com/magnetis-backstage/fazendo-uma-aplica%C3%A7%C3%A3o-em-vue-js-com-tdd-um-guia-extensivo-para-quem-quer-aprender-parte-4-1238eb02a41
+-- Finish the application and testing request to github's api
