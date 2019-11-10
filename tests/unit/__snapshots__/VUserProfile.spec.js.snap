@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VUserProfile renders the component 1`] = `
+<div class="user-profile"><img src="https://avatars1.githubusercontent.com/u/40009638?v=4" class="user-profile__avatar">
+  <div class="user-profile__name">
+    Filipe Maciel
+  </div>
+  <div class="user-profile__bio">
+    Tecnólogo em Análise e Desenvolvimento de Sistemas pelo IFG e Especialista em Desenvolvimento Web e Mobile - Full Stack, pela UFG.
+  </div>
+</div>
+`;
