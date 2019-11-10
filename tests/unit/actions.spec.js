@@ -1,7 +1,7 @@
-jest.mock('@/api')
+jest.mock('@/services/api')
 import flushPromises from 'flush-promises'
 import actions from '@/store/actions'
-import api from '@/api'
+import api from '@/services/api'
 import userFixture from './fixture/user'
 
 describe('store actions', () => {

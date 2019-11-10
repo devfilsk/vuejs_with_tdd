@@ -1,4 +1,4 @@
-import api from '@/api'
+import api from '@/services/api'
 
 export default {
   SEARCH_USER({ commit }, { username }) {
