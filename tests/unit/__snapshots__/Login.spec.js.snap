@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login should render the login component 1`] = `
+<div class="content">
+  <form class="login-content">
+    <h1>Login</h1> <input type="text" class="email"> <input type="text" class="password"> <button class="btn-login">Entrar</button>
+  </form>
+</div>
+`;

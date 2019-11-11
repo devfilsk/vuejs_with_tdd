@@ -18,7 +18,7 @@ describe('UserView', () => {
     // Faz essa função para evitar repetir este código em todos so testes
     const build = () => {
         // arrange - shallowMount renderiza apenas o primeiro nível de dependencia do componente
-        //Segundo parametro serve para verificar se uma props está sendo passada ao componente filho
+        // Segundo parametro serve para verificar se uma props está sendo passada ao componente filho
         const wrapper = shallowMount(UserView, {
             localVue,
             store: new Vuex.Store({ 
