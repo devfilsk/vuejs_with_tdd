@@ -6,17 +6,23 @@ export default {
             email: 'admin@goscore.com.br',
             password: '6f2a3s2t',
         }
+    },
+    methods: {
+        submitted() {
+            
+        }
     }
 }
 </script>
 
 <template>
     <div class="content">
-        <form @submit.prevent="$emit('submitted', { email, password })" class="login-content">
+        <!-- <form @submit.prevent="$emit('submitted', { email, password })" class="login-content"> -->
+        <form @submit.prevent="submitted()" class="login-content">
             <h1>Login</h1>
             <input type="text" class="email" v-model="email">
             <input type="text" class="password" v-model="password">
-            <button class="btn-login">Entrar</button>
+            <button type="submit" class="btn-login">Entrar</button>
         </form>
     </div>
 </template>
