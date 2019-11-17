@@ -1,4 +1,5 @@
 <script>
+import login from '../services/login';
 export default {
     name: 'Login', 
     data() {
@@ -8,8 +9,20 @@ export default {
         }
     },
     methods: {
-        submitted() {
-            
+        async submitted() {
+            let auth = btoa(
+                this.email + ":" + this.password
+              );
+            await login.post('/login', { 
+                email: 'admin@goscore.com.br', password: '6f2a3s2t'
+            }, 
+            {
+                headers: {
+                      Authorization: "basic " + auth
+                }
+            })
+            .then(res => res)
+            .then(res => console.log(res))
         }
     }
 }
