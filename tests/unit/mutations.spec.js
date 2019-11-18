@@ -1,4 +1,5 @@
 import mutations from '@/store/mutations';
+import * as types from '@/store/mutation-types';
 import initialState from '@/store/state';
 import user from './fixture/user';
 
@@ -14,7 +15,7 @@ describe('mutations', () => {
         const expectedUser = user;
 
         // act
-        mutations.SET_USER(state, expectedUser);
+        types.SET_USER(state, expectedUser);
 
         // assert
         expect(state.user).toEqual(expectedUser);

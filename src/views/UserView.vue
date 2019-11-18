@@ -32,12 +32,12 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="">
       <VUserSearchForm 
         @submitted="searchUser" 
       />
-      <VUserProfile :user="user"/>
-      <CardToggle v-if="Object.values(user).length > 0" :user="user"/>
+      <!-- <VUserProfile :user="user"/> -->
+      <CardToggle :user="item" v-for="item in user" :key="item"/>
   </div>
 </template>
 

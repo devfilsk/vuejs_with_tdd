@@ -45,7 +45,6 @@ export default {
     min-height: 150px;
     border-radius: 4px;
     background: #FFF;
-    overflow: hidden;
     flex-direction: column;
     img {
         width: 100%;
@@ -70,7 +69,7 @@ export default {
 .card-body {
     transition: all .3s;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     flex-direction: column;
     position: relative;
 }
@@ -83,7 +82,7 @@ export default {
     right: 0;
 }
 .active {
-    min-height: 100px;
+    min-height: 200px;
 }
 .inactive {
     min-height: 0;
