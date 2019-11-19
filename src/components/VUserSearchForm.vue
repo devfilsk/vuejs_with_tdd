@@ -11,7 +11,11 @@ export default {
 
 <template>
   <form @submit.prevent="$emit('submitted', username)">
-    <input type="text" v-model="username" />
-    <button type="submit">Enviar</button>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Username do GitHub" v-model="username">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-info"><span class="fa fa-plus"></span></button>
+      </div>                  
+    </div>
   </form>
 </template>

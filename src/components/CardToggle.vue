@@ -10,7 +10,7 @@
       <div class="card-body" v-bind:class="[isOpen ? 'active' : 'inactive']">
           <div class="card-row">
               <p>Bio:</p>
-              <p>{{ user.bio }}</p>
+              <p>{{ this.user.bio }}</p>
           </div>
       </div>
   </div>
@@ -69,7 +69,7 @@ export default {
 .card-body {
     transition: all .3s;
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
     flex-direction: column;
     position: relative;
 }

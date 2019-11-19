@@ -63,11 +63,11 @@ describe('UserView', () => {
         state.user = userFixture;
         const { userProfile } = build();
 
-        // wrapper.setData({
-        //     user: {
-        //         name: "Filipe Maciel"
-        //     }
-        // });
+        wrapper.setData({
+            user: {
+                name: "Filipe Maciel"
+            }
+        });
 
         // assert
         expect(userProfile().vm.user).toBe(state.user);

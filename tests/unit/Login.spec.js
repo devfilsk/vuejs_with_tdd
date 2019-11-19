@@ -45,7 +45,7 @@ describe('login', () => {
         password().trigger('input');
         buttonLogar().trigger('click');
         buttonLogar().trigger('submit');
-        console.log("--->", wrapper.emitted().submitted)
+        // console.log("--->", wrapper.emitted().submitted)
         expect(wrapper.emitted().submitted[0]).toEqual([{ email: emailUser, password: passwordUser }])
 
     })
